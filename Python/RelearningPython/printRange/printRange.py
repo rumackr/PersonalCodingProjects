@@ -30,22 +30,14 @@ def main():
 
 # Function to check if upper bound is greater than lower bound
 def greater_then_and_not_equal (lower_val, upper_val):
-    compare_result = False
-    if ((upper_val <= lower_val) or (upper_val == lower_val)):
-        compare_result = False
-    else:
-        compare_result = True
-    return compare_result
+    return upper_val > lower_val
+
+
 
 # Function to check if a number is even
 def is_even(number_to_check):
-    return_val = False
-    modulo_results = number_to_check % 2
-    if modulo_results == 0:
-        return_val = True
-    else:
-        return_val = False
-    return return_val
+    return number_to_check % 2 == 0
+
 
 # Function to get even numbers from a sequence
 def get_even_numbers(number_sequence):
@@ -63,7 +55,7 @@ def write_list_of_numbers(list_to_print):
             numbers_to_print += str(number)
         else:
             numbers_to_print += ", " + str(number)
-    return numbers_to_print 
+    return numbers_to_print
 
 # Call the main function
 if __name__ == "__main__":
